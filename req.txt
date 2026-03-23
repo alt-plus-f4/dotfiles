@@ -1,0 +1,8 @@
+omz
+p10k
+ghostty
+tmux
+bat
+zoxide
+fzf
+eza

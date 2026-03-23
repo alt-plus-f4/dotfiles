@@ -22,21 +22,14 @@ unset LS_COLORS
 # Exports
 # -------- #
 
-export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
-export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
-export PATH="/usr/local/opt/python@3.x/bin:$PATH"
-export EZA_CONFIG_DIR="/Users/valentinasenov/.config/eza"
+export EZA_CONFIG_DIR="/Users/valentinasenov/.config/eza" # change user
+export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}' --preview-window '~3'"
 
-alias dr='cd ~/dirigible/ && java -jar build/application/target/dirigible-application-*-executable.jar'
-alias drc='java -jar build/application/target/dirigible-application-*-executable.jar'
-alias mvnq='mvn -T 1C clean install -P quick-build'
-alias mvnc='mvn clean'
-alias mvnf='mvn formatter:format'
 alias python='python3'
 alias py='python3'
 alias pip='python3 -m pip'
 alias v='nvim'
+alias f='fzf'
 
 # Zoxide
 alias cd='z'
@@ -44,24 +37,9 @@ alias cd='z'
 alias ls='eza --icons=always'
 
 
-
-function idea() {
-    open -a "IntelliJ IDEA CE" "$1"
-}
-
-
-# ? Haskell
-[ -f "/Users/valentinasenov/.ghcup/env" ] && . "/Users/valentinasenov/.ghcup/env" # ghcup-env
-
 # -------- #
 # Terminal
 # -------- #
-
-# Carapace
-autoload -U compinit && compinit
-export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
-zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
-source <(carapace _carapace)
 
 eval "$(zoxide init zsh)"
 
