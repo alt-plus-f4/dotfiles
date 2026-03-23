@@ -23,7 +23,7 @@ unset LS_COLORS
 # -------- #
 
 export EZA_CONFIG_DIR="/Users/valentinasenov/.config/eza" # change user
-export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}' --preview-window '~3'"
+export FZF_DEFAULT_OPTS="--style full --preview 'bat --color=always {}' --preview-window '~3'"
 
 alias python='python3'
 alias py='python3'
@@ -35,7 +35,8 @@ alias f='fzf'
 alias cd='z'
 # Eza
 alias ls='eza --icons=always'
-
+alias szh='source ~/.zshrc'
+alias ezsh='v ~/.zshrc'
 
 # -------- #
 # Terminal
