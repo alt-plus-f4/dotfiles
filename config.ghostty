@@ -1,0 +1,10 @@
+clipboard-read = allow
+background-blur = 40
+font-size = 13
+background = #130b1f
+mouse-hide-while-typing = true
+macos-option-as-alt = true
+macos-titlebar-style = "hidden"
+background-opacity = 0.67
+
+copy-on-select = clipboard
